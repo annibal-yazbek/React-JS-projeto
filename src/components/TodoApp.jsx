@@ -41,10 +41,10 @@ const TodoApp = () => {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
+        <button type="submit" className="add-button">
+          Adicionar
+        </button>
       </form>
-      <button type="submit" className="add-button">
-        Adicionar
-      </button>
 
       {/* Lista de tarefas */}
       {todos.length === 0 && <p className="empty">Não há tarefas</p>}
